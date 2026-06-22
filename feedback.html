@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="feedback.html">Feedback</a>
+  </nav>
+
+  <div class="container">
+
+    <h2>Feedback Form</h2>
+    <p>We would love to hear your thoughts! Please fill out the form below.</p>
+
+    <form action="#" method="post">
+
+      <!-- Basic Information -->
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Enter your full name"
+          minlength="3"
+          maxlength="50"
+          required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="you@example.com"
+          required>
+      </div>
+
+      <!-- Rating Section -->
+      <fieldset>
+        <legend>How satisfied are you?</legend>
+
+        <div class="radio-option">
+          <input type="radio" id="very-satisfied" name="rating" value="very-satisfied" required>
+          <label for="very-satisfied">Very Satisfied</label>
+        </div>
+
+        <div class="radio-option">
+          <input type="radio" id="satisfied" name="rating" value="satisfied">
+          <label for="satisfied">Satisfied</label>
+        </div>
+
+        <div class="radio-option">
+          <input type="radio" id="neutral" name="rating" value="neutral">
+          <label for="neutral">Neutral</label>
+        </div>
+
+        <div class="radio-option">
+          <input type="radio" id="unsatisfied" name="rating" value="unsatisfied">
+          <label for="unsatisfied">Unsatisfied</label>
+        </div>
+      </fieldset>
+
+      <!-- Interests Section -->
+      <fieldset>
+        <legend>Your Interests</legend>
+
+        <div class="checkbox-option">
+          <input type="checkbox" id="web-dev" name="interests" value="web-development">
+          <label for="web-dev">Web Development</label>
+        </div>
+
+        <div class="checkbox-option">
+          <input type="checkbox" id="mobile-dev" name="interests" value="mobile-development">
+          <label for="mobile-dev">Mobile Development</label>
+        </div>
+
+        <div class="checkbox-option">
+          <input type="checkbox" id="ai-ml" name="interests" value="ai-machine-learning">
+          <label for="ai-ml">AI &amp; Machine Learning</label>
+        </div>
+      </fieldset>
+
+      <!-- Country Selection -->
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select your country --</option>
+          <option value="nepal">Nepal</option>
+          <option value="india">India</option>
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+
+      <!-- Feedback Message -->
+      <div class="form-group">
+        <label for="feedback-message">Write your feedback here</label>
+        <textarea
+          id="feedback-message"
+          name="feedback-message"
+          placeholder="Type your feedback here..."
+          maxlength="500"
+          required></textarea>
+        <small>Maximum 500 characters.</small>
+      </div>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit Feedback">
+
+    </form>
+
+  </div>
+
+</body>
+</html>
